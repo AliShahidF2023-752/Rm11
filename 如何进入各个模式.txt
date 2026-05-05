@@ -1,0 +1,32 @@
+【进入9008】
+手机可以正常关机：断开数据线，手机关机，按住音量加减，连接电脑，保持长按直到设备管理器的端口一项中出现Qualcomm HS-USB QDLoader 9008。
+手机不能正常关机（比如卡第一屏）：连接电脑，长按电源键，手机重启黑屏瞬间按住音量加减，保持长按直到设备管理器的端口一项中出现Qualcomm HS-USB QDLoader 9008。
+从Fastboot模式按键进：连接电脑，按一下电源键后立刻同时按住音量加减，保持长按直到设备管理器的端口一项中出现Qualcomm HS-USB QDLoader 9008。
+从Fastboot模式菜单进：在Fastboot模式按音量减，调整菜单选项，如果出现“edload”相关选项，按电源键确认即可。注意：此选项只在努比亚、红魔的定制Fastboot中存在。
+adb命令进：开机或TWRP状态下连接电脑，开启USB调试，在工具箱命令行输入adb reboot edl回车。
+从FTM模式进：进入FTM模式连接电脑，在工具箱命令行输入adb reboot edl回车。
+使用9008线进：购买9008线，关机状态下连接电脑，或任意状态下连接电脑后长按电源键，直到设备管理器的端口一项中出现Qualcomm HS-USB QDLoader 9008。此方法不一定有效。
+拆机短接进：关机状态下按照短接图（可以在yhcres.top查找）短接，然后连接数据线。
+进入9008后手机是完全黑屏状态。屏幕只要发光或有任何显示均为失败。
+
+【进入Fastboot】
+adb命令进：开机或TWRP状态下连接电脑，开启USB调试，在工具箱命令行输入adb reboot bootloader回车。
+FTM模式进：进入FTM模式连接电脑，在工具箱命令行输入adb reboot bootloader回车。
+按键进：长按电源键和音量减，或不连接电脑的状态下长按电源键和音量加减。部分机型可能无效。
+
+【进入FastbootD】
+adb命令进：开机或TWRP状态下连接电脑，开启USB调试，在工具箱命令行输入adb reboot fastboot回车。
+FTM模式进：进入FTM模式连接电脑，在工具箱命令行输入adb reboot fastboot回车。
+Fastboot模式进：Fastboot模式下连接电脑，在工具箱命令行输入fastboot reboot fastboot回车。
+注：FastbootD属于Recovery模式。
+
+【进入Recovery】
+adb命令进：开机状态下连接电脑，开启USB调试，在工具箱命令行输入adb reboot recovery回车。
+FTM模式进：进入FTM模式连接电脑，在工具箱命令行输入adb reboot recovery回车。
+按键进：长按电源键和音量加。
+
+【进入FTM模式】
+按键进：长按电源键和音量减（部分机型可能进入的是Fastboot）。
+
+【强制重启】
+长按电源键。
